@@ -129,18 +129,46 @@ section {
     display: flex;
   }
 }
-#hundetyper .grid-typer {
+main .grid-typer {
   display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 2fr;
+  align-items: left;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
 }
-#hundetyper img {
-  max-height: 100%;
-  max-width: 100%;
-  border-radius: 50%;
+main img {
+  height: 100%;
+  max-height: 15rem;
+  border-radius: 50px;
 }
-#hundetyper .tekst {
+main .tekst {
   float: left;
+}
+
+#selvskabshund,
+#terriere,
+#hyrdehund,
+#molosser {
+  height: 20rem;
+}
+#selvskabshund .grid-typer,
+#terriere .grid-typer,
+#hyrdehund .grid-typer,
+#molosser .grid-typer {
+  grid-template-columns: 1fr 4fr;
+}
+
+#jagthund,
+#gaardhund,
+#mynder {
+  height: 20rem;
+}
+#jagthund .grid-typer,
+#gaardhund .grid-typer,
+#mynder .grid-typer {
+  grid-template-columns: 4fr 1fr;
+}
+#jagthund .tekst,
+#gaardhund .tekst,
+#mynder .tekst {
+  order: -1;
 }/*# sourceMappingURL=racer.css.map */

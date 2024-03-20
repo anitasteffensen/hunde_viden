@@ -3,21 +3,45 @@
 
 
 
-#hundetyper {
+main {
     .grid-typer {
         display: grid;
-        align-items: center;
-        grid-template-columns: 1fr 2fr;
+        align-items: left;
         column-gap: 2rem;
     }
 
     img {
-        max-height: 100%;
-        max-width: 100%;
-        border-radius: 50%;
+        height: 100%;
+        max-height: 15rem;
+        border-radius: 50px;
     }
 
     .tekst {
         float: left;
+    }
+}
+
+#selvskabshund,
+#terriere,
+#hyrdehund,
+#molosser {
+    height: 20rem;
+
+    .grid-typer {
+        grid-template-columns: 1fr 4fr;
+    }
+}
+
+#jagthund,
+#gaardhund,
+#mynder {
+    height: 20rem;
+
+    .grid-typer {
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .tekst {
+        order: -1;
     }
 }
