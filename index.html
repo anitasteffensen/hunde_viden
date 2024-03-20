@@ -1,55 +1,105 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content=>
-    <meta name="keywords" content=>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VufVuf viden</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script></head>
+    <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
-    <header>
-        <div class="header-content">
-            <img class="logo" alt="">
+    <div class="container">
+        <header>
+            <div class="header-content">
 
-        <!--navigation for mobile-->
-            <nav class="mobile-nav">
-                <a href="index.html"><img src="logo" alt=""></a>
-                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
-            </nav>
 
-        <!--navigation for desktop-->
-        <nav class="desktop-nav">
-            <ul>
-                <li><a class="active" href="#">Forside</a></li>
-                <li><a href="#">Om</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
+                <!--navigation for mobile-->
+                <nav class="mobile-nav">
+                    <a href="index.html"><img src="img/logo.svg" alt="outline af fransk bulldog ører"></a>
+                    <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+                </nav>
 
-        </div>
-    </header>
-    <main>
-        <div class="banner-img"></div>
-        <div class="wrapper">
+                <!--navigation for desktop-->
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a class="active" href="index.html">Forside</a></li>
+                        <li><a href="kommende.html">Før hvalpen ankommer</a></li>
+                        <li><a href="racer.html">Hvilken race passer til dig?</a></li>
+                        <li><a href="blog.html">blog indlæg</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <main>
+            <div class="banner-img"></div>
             <h1>Alt du skal vide om at have hund</h1>
             <p>Her kan du få råd om alt fra sundhed, ernæring, læring og pleje.</p>
+
+            <section id="index-navigation">
+                <div class="page-navigation">
+                    <h2>Pelspleje</h2>
+                    <p></p>
+                    <a class="link" href="">læs mere
+
+                    </a>
+                </div>
+                <div class="page-navigation">
+                    <h2>Adfærdsproblemer?</h2>
+                    <p></p>
+                    <a class="link" href="">læs mere</a>
+                </div>
+                <div class="page-navigation">
+                    <h2>Sundhed</h2>
+                    <p></p>
+                    <a class="link" href="">læs mere</a>
+                </div>
+                <div class="page-navigation">
+                    <h2>Før hvalpen kommer</h2>
+                    <p></p>
+                    <a class="link" href="">læs mere
+                    </a>
+                </div>
+                <div class="page-navigation">
+                    <h2>Hvilken race?</h2>
+                    <p></p>
+                    <a class="link" href="">læs mere</a>
+                </div>
+                <div class="page-navigation">
+                    <h2>Hvilken race?</h2>
+                    <p></p>
+                    <a class="link" href="">læs mere</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <p>© 2024 VufVuf viden</p>
+                    <p><a href="#">Kontakt</a></p>
+                    <p> <a href="#">Cookie-og privatlivspolitik</a></p>
+                </div>
+                <div class="footer-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </footer>
     </div>
-    </main>
-    <footer></footer>
 
     <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
 
-<script>
-    const navbarToggle = () => {
-        console.log("it works")
-        const nav = document.querySelector('.desktop-nav');
-        nav.classList.toggle('toggleShow');
-    }
-    document.querySelector('.navToggle').addEventListener('click', navbarToggle);
-</script>
+    <script>
+        const navbarToggle = () => {
+            console.log("it works")
+            const nav = document.querySelector('.desktop-nav');
+            nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
 </body>
-</html>
 
+</html>

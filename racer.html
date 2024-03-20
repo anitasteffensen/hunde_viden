@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunderacer</title>
+    <link rel="stylesheet" href="racer.css">
+    <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
 </head>
+</head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="header-content">
+
+
+                <!--navigation for mobile-->
+                <nav class="mobile-nav">
+                    <a href="index.html"><img src="img/logo.webp" alt=""></a>
+                    <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+                </nav>
+
+                <!--navigation for desktop-->
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="kommende.html">Før hvalpen ankommer</a></li>
+                        <li><a class="active" href="racer.html">Hvilken race er den rigtige?</a></li>
+                        <li><a href="blog.html">blog-indlæg</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <main>
+            <h1>Hvilken race passer til dig?</h1>
+            <p></p>
+            <h2>Hvilken slags?</h2>
+            <p></p>
+            <section id="hundetyper">
+                <div class="grid-typer">
+                    <div class="hunde-billed"> <img src="/img/frenchbulldog.jpg" alt="dark frenchbulldog"></div>
+                    <div class="tekst">
+                        <h3>Selvskabshunde</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="grid-typer">
+                    <div class="hunde-billed">
+                        <img src="" alt="">
+                    </div>
+                    <div class="tekst">
+                        <h3>Apporterende jagthunde</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="grid-typer">
+                    <div class="hunde-billed">
+                        <img src="" alt="">
+                    </div>
+                    <div class="tekst">
+                        <h3>Terriere</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="grid-typer">
+                    <div class="hunde-billed">
+                        <img src="" alt="">
+                    </div>
+                    <div class="tekst">
+                        <h3>Gårdhunde</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="grid-typer">
+                    <div class="hunde-billed">
+                        <img src="" alt="">
+                    </div>
+                    <div class="tekst">
+                        <h3>Hyrdehunde</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="grid-typer">
+                    <div class="hunde-billed">
+                        <img src="" alt="">
+                    </div>
+                    <div class="tekst">
+                        <h3>Mynder</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="grid-typer">
+                    <div class="hunde-billed">
+                        <img src="" alt="">
+                    </div>
+                    <div class="tekst">
+                        <h3>Molossertyper</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+            </section>
+
+            <a href="https://www.dkk.dk/uploads/images/Vælg-den-rigtige-hund.pdf" target="_blank">Vælg den rigtige
+                hund</a>
+
+            <a href="https://www.dkk.dk/race" target="_blank">Hunde leksikon</a>
+        </main>
+        <footer>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-info">
+                        <p>© 2024 VufVuf viden</p>
+                        <p><a href="#">Kontakt</a></p>
+                        <p> <a href="#">Cookie-og privatlivspolitik</a></p>
+                    </div>
+                    <div class="footer-img">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+            </footer>
+        </footer>
+        <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
+
+        <script>
+            const navbarToggle = () => {
+                console.log("it works")
+                const nav = document.querySelector('.desktop-nav');
+                nav.classList.toggle('toggleShow');
+            }
+            document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+        </script>
 </body>
+
 </html>

@@ -1,0 +1,23 @@
+@import 'variables.scss';
+@import 'standard.scss';
+
+
+
+#hundetyper {
+    .grid-typer {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+    .tekst {
+        float: left;
+    }
+}

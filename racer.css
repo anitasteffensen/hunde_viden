@@ -129,38 +129,18 @@ section {
     display: flex;
   }
 }
-main .banner-img {
-  border-bottom: solid 4px #9DC2DC;
-  background-image: url("img/dogwalking.jpeg");
-  width: 100%;
-  height: 350px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#index-navigation {
+#hundetyper .grid-typer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
-#index-navigation .page-navigation {
-  display: flex;
-  flex-direction: column;
+#hundetyper img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
 }
-#index-navigation .link {
-  width: auto;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  justify-content: center;
-  cursor: pointer;
-  color: black;
-}
-
-/**********-----Mobile------**********/
-@media screen and (max-width: 900px) {
-  #index-navigation {
-    grid-template-columns: 1fr;
-  }
-}/*# sourceMappingURL=styles.css.map */
+#hundetyper .tekst {
+  float: left;
+}/*# sourceMappingURL=racer.css.map */
