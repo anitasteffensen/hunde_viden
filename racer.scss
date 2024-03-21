@@ -21,7 +21,7 @@ main {
     }
 }
 
-#selvskabshund,
+#selskabshund,
 #terriere,
 #hyrdehund,
 #molosser {
@@ -43,5 +43,11 @@ main {
 
     .tekst {
         order: -1;
+    }
+}
+
+#henvisninger {
+    p {
+        font-size: 0.75rem;
     }
 }

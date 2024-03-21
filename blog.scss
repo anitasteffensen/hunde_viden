@@ -2,10 +2,25 @@
 @import 'standard.scss';
 
 
+#wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 
+}
 
 .blog-indlaeg {
     border: solid 1px black;
     margin: 2rem 2rem;
+    padding: 1rem 2rem;
 
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    #wrapper {
+        grid-template-columns: 50% 50%;
+    }
 }
