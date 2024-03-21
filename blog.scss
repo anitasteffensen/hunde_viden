@@ -6,15 +6,25 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
 
+    .blog-indlaeg {
+        border: solid 1px black;
+        margin: 2rem 2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .tekst {
+        margin: 0 2rem;
+    }
+
+
 }
 
-.blog-indlaeg {
-    border: solid 1px black;
-    margin: 2rem 2rem;
-    padding: 1rem 2rem;
 
 
-}
+
 
 
 

@@ -23,6 +23,15 @@ p {
   word-wrap: balance;
 }
 
+h1 {
+  font-size: 1.7rem;
+
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.3rem;
@@ -41,13 +50,10 @@ sub {
 
 /*Navigation*/
 header {
-  grid-column: 1/6;
-  /*grid column start og slut på en linje i stedet for to*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $background;
-  border-bottom: 4px solid #9DC2DC;
 }
 
 nav {
@@ -106,13 +112,6 @@ nav ul a:hover {
   width: 100%;
 }
 
-.container_2 {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  background-color: #F2E5D5;
-
-}
 
 section {
   justify-content: center;

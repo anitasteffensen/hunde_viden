@@ -4,50 +4,110 @@
 
 
 main {
-    .grid-typer {
-        display: grid;
-        align-items: left;
-        column-gap: 2rem;
+
+    .hunde-billede {
+        background-image: url("img/race.png");
+        background-position: center;
+        background-size: cover;
+        height: 15rem;
+        width: 100%;
     }
 
     img {
         height: 100%;
-        max-height: 15rem;
-        border-radius: 50px;
-    }
-
-    .tekst {
+        max-height: 13rem;
+        border-radius: 10px;
         float: left;
-    }
-}
-
-#selskabshund,
-#terriere,
-#hyrdehund,
-#molosser {
-    height: 20rem;
-
-    .grid-typer {
-        grid-template-columns: 1fr 4fr;
-    }
-}
-
-#jagthund,
-#gaardhund,
-#mynder {
-    height: 20rem;
-
-    .grid-typer {
-        grid-template-columns: 4fr 1fr;
+        margin-right: 1rem;
     }
 
     .tekst {
-        order: -1;
+        text-align: justify;
+
     }
+
+    #selskabshund,
+    #terriere,
+    #hyrdehund,
+    #molosser,
+    #jagthund,
+    #gaardhund,
+    #mynder {
+        margin-bottom: 2rem;
+    }
+
+    a {
+        color: black;
+    }
+
+
 }
+
+
+
+
 
 #henvisninger {
     p {
         font-size: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    main {
+        .grid-typer {
+            display: grid;
+            align-items: left;
+            column-gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        img {
+            height: 100%;
+            max-height: 20rem;
+            border-radius: 50px;
+            margin-right: 0;
+        }
+
+        .text {
+            text-align: left;
+        }
+
+
+
+
+    }
+
+    #selskabshund,
+    #terriere,
+    #hyrdehund,
+    #molosser {
+
+        .grid-typer {
+            grid-template-columns: 1fr 4fr;
+        }
+    }
+
+    #jagthund,
+    #gaardhund,
+    #mynder {
+
+        .grid-typer {
+            grid-template-columns: 4fr 1fr;
+        }
+
+        .tekst {
+            order: -1;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hunde-billede {
+        background-image: url("img/race.png");
+        background-position: center bottom;
+        background-size: cover;
+        height: 25rem;
+        width: 100%;
     }
 }
