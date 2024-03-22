@@ -5,7 +5,7 @@
 
 main {
 
-    .hunde-billede {
+    .hunde-banner {
         background-image: url("img/race.png");
         background-position: center;
         background-size: cover;
@@ -24,6 +24,10 @@ main {
     .tekst {
         text-align: justify;
 
+    }
+
+    #typer {
+        margin-top: 2rem;
     }
 
     #selskabshund,
@@ -53,7 +57,32 @@ main {
     }
 }
 
-@media screen and (min-width: 650px) {
+
+
+@media screen and (min-width: 650px) {}
+
+main {
+    img {
+        height: 100%;
+        max-height: 16rem;
+        border-radius: 25px;
+        float: left;
+        margin-right: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    main {
+
+        .desk-p {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 800px) {
     main {
         .grid-typer {
             display: grid;
@@ -62,52 +91,56 @@ main {
             margin: 2rem 0;
         }
 
+        .hunde-billed {
+            display: flex;
+            align-items: center;
+        }
+
         img {
             height: 100%;
-            max-height: 20rem;
+            max-height: 25rem;
             border-radius: 25px;
             margin-right: 0;
+
         }
 
-        .text {
-            text-align: left;
+        p {
+
+            text-align: justify;
         }
 
 
 
-
-    }
-
-    #selskabshund,
-    #terriere,
-    #hyrdehund,
-    #molosser {
-
-        .grid-typer {
-            grid-template-columns: 1fr 4fr;
-        }
-    }
-
-    #jagthund,
-    #gaardhund,
-    #mynder {
-
-        .grid-typer {
-            grid-template-columns: 4fr 1fr;
+        .hunde-billede {
+            background-image: url("img/race.png");
+            background-position: center;
+            background-size: cover;
+            height: 25rem;
+            width: 100%;
         }
 
-        .tekst {
-            order: -1;
-        }
-    }
-}
+        #selskabshund,
+        #terriere,
+        #hyrdehund,
+        #molosser {
 
-@media screen and (min-width: 800px) {
-    .hunde-billede {
-        background-image: url("img/race.png");
-        background-position: center bottom;
-        background-size: cover;
-        height: 25rem;
-        width: 100%;
+            .grid-typer {
+                grid-template-columns: 1fr 4fr;
+            }
+        }
+
+        #jagthund,
+        #gaardhund,
+        #mynder {
+
+            .grid-typer {
+                grid-template-columns: 4fr 1fr;
+            }
+
+            .tekst {
+                order: -1;
+            }
+        }
+
     }
 }

@@ -43,12 +43,20 @@ h2 {
   margin: 1rem 0;
 }
 
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  margin: 1rem 0;
+}
+
 p {
   font-family: "open sans";
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   margin: 1rem 0;
   text-align: left;
+  word-wrap: balance;
 }
 
 sub {
@@ -173,7 +181,7 @@ section {
     display: flex;
   }
 }
-main .hunde-billede {
+main .hunde-banner {
   background-image: url("img/race.png");
   background-position: center;
   background-size: cover;
@@ -189,6 +197,9 @@ main img {
 }
 main .tekst {
   text-align: justify;
+}
+main #typer {
+  margin-top: 2rem;
 }
 main #selskabshund,
 main #terriere,
@@ -207,7 +218,20 @@ main a {
   font-size: 0.75rem;
 }
 
-@media screen and (min-width: 650px) {
+main img {
+  height: 100%;
+  max-height: 16rem;
+  border-radius: 25px;
+  float: left;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  main .desk-p {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
   main .grid-typer {
     display: grid;
     align-items: left;
@@ -215,38 +239,40 @@ main a {
          column-gap: 2rem;
     margin: 2rem 0;
   }
+  main .hunde-billed {
+    display: flex;
+    align-items: center;
+  }
   main img {
     height: 100%;
-    max-height: 20rem;
+    max-height: 25rem;
     border-radius: 25px;
     margin-right: 0;
   }
-  main .text {
-    text-align: left;
+  main p {
+    text-align: justify;
   }
-  #selskabshund .grid-typer,
-  #terriere .grid-typer,
-  #hyrdehund .grid-typer,
-  #molosser .grid-typer {
-    grid-template-columns: 1fr 4fr;
-  }
-  #jagthund .grid-typer,
-  #gaardhund .grid-typer,
-  #mynder .grid-typer {
-    grid-template-columns: 4fr 1fr;
-  }
-  #jagthund .tekst,
-  #gaardhund .tekst,
-  #mynder .tekst {
-    order: -1;
-  }
-}
-@media screen and (min-width: 800px) {
-  .hunde-billede {
+  main .hunde-billede {
     background-image: url("img/race.png");
-    background-position: center bottom;
+    background-position: center;
     background-size: cover;
     height: 25rem;
     width: 100%;
+  }
+  main #selskabshund .grid-typer,
+  main #terriere .grid-typer,
+  main #hyrdehund .grid-typer,
+  main #molosser .grid-typer {
+    grid-template-columns: 1fr 4fr;
+  }
+  main #jagthund .grid-typer,
+  main #gaardhund .grid-typer,
+  main #mynder .grid-typer {
+    grid-template-columns: 4fr 1fr;
+  }
+  main #jagthund .tekst,
+  main #gaardhund .tekst,
+  main #mynder .tekst {
+    order: -1;
   }
 }/*# sourceMappingURL=racer.css.map */

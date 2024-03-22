@@ -30,6 +30,10 @@ h2 {
   @include header2
 }
 
+h3 {
+  @include header3
+}
+
 p {
   @include text
 }

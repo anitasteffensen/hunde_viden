@@ -43,12 +43,20 @@ h2 {
   margin: 1rem 0;
 }
 
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  margin: 1rem 0;
+}
+
 p {
   font-family: "open sans";
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   margin: 1rem 0;
   text-align: left;
+  word-wrap: balance;
 }
 
 sub {

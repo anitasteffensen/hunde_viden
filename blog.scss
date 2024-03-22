@@ -23,11 +23,18 @@
 
     .tekst {
         margin: 0 2rem;
+        height: 100%;
+        padding-bottom: 2rem;
+
     }
 
     .link {
-        margin-top: auto;
+
         text-align: center;
+    }
+
+    a {
+        color: black;
     }
 
 
