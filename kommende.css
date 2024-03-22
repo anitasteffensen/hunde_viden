@@ -80,14 +80,20 @@ header {
 
 nav {
   color: black;
-  height: 6rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 nav img {
-  height: 100%;
+  height: 5rem;
+  margin: 0 0;
+}
+
+.logo-a {
+  padding: 0;
+  margin: 0;
 }
 
 nav ul {
@@ -108,7 +114,7 @@ nav a {
 }
 
 nav ul a:hover {
-  color: #267324;
+  color: #7CAB7B;
 }
 
 .mobile-nav .bars {
@@ -125,11 +131,21 @@ nav ul a:hover {
   color: #267324;
 }
 
+.fa-2xl {
+  padding-top: 0.5rem;
+}
+
 /*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 section {
@@ -179,6 +195,9 @@ section {
   }
   .desktop-nav li {
     display: flex;
+  }
+  .nav-container {
+    display: block;
   }
 }
 video {

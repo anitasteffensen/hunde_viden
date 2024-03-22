@@ -12,23 +12,26 @@
 <body>
     <div class="container">
         <header>
+            <div class="container">
+                <div class="nav-container">
+                    <!--navigation for mobile-->
+                    <nav class="mobile-nav">
+                        <a class="logo-a" href="index.html"><img src="img/logo.svg"
+                                alt="outline af fransk bulldog ører"></a>
+                        <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+                    </nav>
 
-
-            <!--navigation for mobile-->
-            <nav class="mobile-nav">
-                <a href="index.html"><img src="img/logo.svg" alt="outline af fransk bulldog ører"></a>
-                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
-            </nav>
-
-            <!--navigation for desktop-->
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="index.html">Forside</a></li>
-                    <li><a href="kommende.html">Før hvalpen ankommer</a></li>
-                    <li><a class="active" href="racer.html">Hvilken race er den rigtige?</a></li>
-                    <li><a href="blog.html">blog-indlæg</a></li>
-                </ul>
-            </nav>
+                    <!--navigation for desktop-->
+                    <nav class="desktop-nav">
+                        <ul>
+                            <li><a href="index.html">Forside</a></li>
+                            <li><a href="kommende.html">Før hund</a></li>
+                            <li><a class="active" href="racer.html">Vælg den rigtige race</a></li>
+                            <li><a href="blog.html">Bloggen</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
         </header>
         <main>
@@ -242,20 +245,21 @@
                     <p> <a href="#">Cookie-og privatlivspolitik</a></p>
                 </div>
                 <div class="footer-img">
-                    <img src="img/logo.png" alt="">
+                    <img src="img/logo2.svg" alt="">
                 </div>
             </div>
         </footer>
-        <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
+    </div>
+    <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
 
-        <script>
-            const navbarToggle = () => {
-                console.log("it works")
-                const nav = document.querySelector('.desktop-nav');
-                nav.classList.toggle('toggleShow');
-            }
-            document.querySelector('.navToggle').addEventListener('click', navbarToggle);
-        </script>
+    <script>
+        const navbarToggle = () => {
+            console.log("it works")
+            const nav = document.querySelector('.desktop-nav');
+            nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
 </body>
 
 </html>

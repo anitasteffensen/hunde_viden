@@ -11,8 +11,9 @@ $card-background: #E2D2C4;
 $text-colour: black;
 $contrast-colour: #267324;
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-$box-shadow-hover: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+$box-shadow-hover: 0 16px 32px 0 rgba(0, 0, 0, 0.4);
 $border-radius: 25px;
+$hover-color: #7CAB7B;
 
 @mixin header1 {
     font-family: Arial, Helvetica, sans-serif;

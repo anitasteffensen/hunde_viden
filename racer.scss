@@ -16,7 +16,7 @@ main {
     img {
         height: 100%;
         max-height: 13rem;
-        border-radius: 25px;
+        border-radius: $border-radius;
         float: left;
         margin-right: 1rem;
     }
@@ -41,7 +41,7 @@ main {
     }
 
     a {
-        color: black;
+        color: $text-colour;
     }
 
 
@@ -65,7 +65,7 @@ main {
     img {
         height: 100%;
         max-height: 16rem;
-        border-radius: 25px;
+        border-radius: $border-radius;
         float: left;
         margin-right: 1rem;
     }

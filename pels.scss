@@ -1,2 +1,11 @@
 @import 'variables.scss';
 @import 'standard.scss';
+
+
+.pels-billed {
+    background-image: url("img/grooming.png");
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+}

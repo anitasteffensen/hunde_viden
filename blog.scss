@@ -5,26 +5,28 @@
 #wrapper {
     .blog-indlaeg {
         margin-bottom: 2rem;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: $box-shadow;
         transition: 0.3s;
-        border-radius: 25px;
-        background-color: #E2D2C4;
+        border-radius: $border-radius;
+        background-color: $card-background;
     }
 
     .blog-indlaeg:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: $box-shadow-hover;
     }
 
     img {
         width: 100%;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
     }
 
     .tekst {
         margin: 0 2rem;
         height: 100%;
         padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
 
     }
 
@@ -34,7 +36,7 @@
     }
 
     a {
-        color: black;
+        color: $text-colour;
     }
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog indlæg</title>
+    <title>VufVuf Bloggen</title>
     <link rel="stylesheet" href="blog.css">
     <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
 </head>
@@ -12,21 +12,25 @@
 <body>
     <div class="container">
         <header>
-            <!--navigation for mobile-->
-            <nav class="mobile-nav">
-                <a href="index.html"><img src="img/logo.svg" alt="outline af fransk bulldog ører"></a>
-                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
-            </nav>
+            <div class="nav-container">
+                <!--navigation for mobile-->
+                <nav class="mobile-nav">
+                    <a class="logo-a" href="index.html"><img src="img/logo.svg"
+                            alt="outline af fransk bulldog ører"></a>
+                    <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+                </nav>
 
-            <!--navigation for desktop-->
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a class="active" href="index.html">Forside</a></li>
-                    <li><a href="kommende.html">Før hvalpen ankommer</a></li>
-                    <li><a href="racer.html">Hvilken race passer til dig?</a></li>
-                    <li><a href="blog.html">blog indlæg</a></li>
-                </ul>
-            </nav>
+                <!--navigation for desktop-->
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="kommende.html">Før hund</a></li>
+                        <li><a href="racer.html">Vælg den rigtige race</a></li>
+                        <li><a class="active" href="blog.html">Bloggen</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </header>
         <main>
             <section id="wrapper">
@@ -87,8 +91,10 @@
                     </div>
                 </div>
             </section>
+            <div class="line-break"></div>
 
         </main>
+
         <footer>
             <div class="footer-container">
                 <div class="footer-info">
@@ -97,11 +103,12 @@
                     <p> <a href="#">Cookie-og privatlivspolitik</a></p>
                 </div>
                 <div class="footer-img">
-                    <img src="img/logo.png" alt="">
+                    <img src="img/logo2.svg" alt="">
                 </div>
             </div>
         </footer>
     </div>
+
 
     <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
 
