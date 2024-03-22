@@ -12,28 +12,31 @@
 <body>
     <div class="container">
         <header>
-            <div class="nav-container">
-                <!--navigation for mobile-->
-                <nav class="mobile-nav">
-                    <a class="logo-a" href="index.html"><img src="img/logo.svg"
-                            alt="outline af fransk bulldog ører"></a>
-                    <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
-                </nav>
+            <div class="container">
+                <div class="nav-container">
+                    <!--navigation for mobile-->
+                    <nav class="mobile-nav">
+                        <a class="logo-a" href="index.html"><img src="img/logo.svg"
+                                alt="outline af fransk bulldog ører"></a>
+                        <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+                    </nav>
 
-                <!--navigation for desktop-->
-                <nav class="desktop-nav">
-                    <ul>
-                        <li><a href="index.html">Forside</a></li>
-                        <li><a href="kommende.html">Før hund</a></li>
-                        <li><a href="racer.html">Vælg den rigtige race</a></li>
-                        <li><a class="active" href="blog.html">Bloggen</a></li>
-                    </ul>
-                </nav>
+                    <!--navigation for desktop-->
+                    <nav class="desktop-nav">
+                        <ul>
+                            <li><a href="index.html">Forside</a></li>
+                            <li><a href="kommende.html">Før hund</a></li>
+                            <li><a href="racer.html">Vælg den rigtige race</a></li>
+                            <li><a class="active" href="blog.html">Bloggen</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
         </header>
         <main>
             <section id="wrapper">
+                <!--På desktop så aligner indlæggene ikke med nav-baren, har ingen ide om hvorfor og har prøvet at lege rundt med det. Håber en af jer eventuelt kan give mig svar på hvorfor den falder ud over min container.-->
                 <div class="blog-indlaeg">
                     <img src="img/walk.png" alt="">
                     <div class="tekst">
@@ -108,6 +111,8 @@
             </div>
         </footer>
     </div>
+
+
 
 
     <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
