@@ -1,3 +1,13 @@
+@font-face {
+  font-family: open sans;
+  src: url("font/opensans.ttf");
+}
+/*Variables*/
+@font-face {
+  font-family: open sans;
+  src: url("font/opensans.ttf");
+}
+/*Variables*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +18,6 @@ body {
   margin: auto 2rem;
   text-align: left;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f0e8;
 }
 
@@ -21,16 +30,25 @@ p {
 }
 
 h1 {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.7rem;
+  color: black;
+  margin: 1rem 0;
 }
 
 h2 {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.35rem;
+  color: black;
+  margin: 1rem 0;
 }
 
 p {
+  font-family: "open sans";
   font-size: 1rem;
   line-height: 1.3rem;
+  margin: 1rem 0;
+  text-align: left;
 }
 
 sub {
@@ -39,8 +57,8 @@ sub {
 }
 
 .line-break {
-  margin-top: 1rem;
-  background-color: black;
+  margin: 1rem 0;
+  background-color: #267324;
   height: 2px;
 }
 
@@ -75,14 +93,14 @@ nav a {
   color: black;
   padding: 0.5em;
   margin: 0.5em;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
   height: 100%;
 }
 
 nav ul a:hover {
-  color: #9DC2DC;
+  color: #267324;
 }
 
 .mobile-nav .bars {
@@ -96,7 +114,7 @@ nav ul a:hover {
 }
 
 .active {
-  color: #9DC2DC;
+  color: #267324;
 }
 
 /*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
@@ -146,7 +164,7 @@ section {
   .desktop-nav {
     display: none;
     height: auto;
-    border-top: 4px solid #9DC2DC;
+    border-top: 4px solid #267324;
   }
   .desktop-nav ul {
     flex-direction: column;

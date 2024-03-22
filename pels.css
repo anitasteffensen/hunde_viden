@@ -1,1 +1,175 @@
-/*# sourceMappingURL=pels.css.map */
+@font-face {
+  font-family: open sans;
+  src: url("font/opensans.ttf");
+}
+/*Variables*/
+@font-face {
+  font-family: open sans;
+  src: url("font/opensans.ttf");
+}
+/*Variables*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto 2rem;
+  text-align: left;
+  color: black;
+  background-color: #f4f0e8;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 1rem 0;
+  word-wrap: balance;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  color: black;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  color: black;
+  margin: 1rem 0;
+}
+
+p {
+  font-family: "open sans";
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+sub {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.line-break {
+  margin: 1rem 0;
+  background-color: #267324;
+  height: 2px;
+}
+
+/*Navigation*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f0e8;
+}
+
+nav {
+  color: black;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav a {
+  color: black;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  height: 100%;
+}
+
+nav ul a:hover {
+  color: #267324;
+}
+
+.mobile-nav .bars {
+  display: none;
+  cursor: pointer;
+}
+
+.toggleShow {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.active {
+  color: #267324;
+}
+
+/*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-container .footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-container .footer-info a {
+  color: black;
+}
+.footer-container .footer-img {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container img {
+  height: 4rem;
+}
+
+/**********-----Mobile------**********/
+@media screen and (max-width: 900px) {
+  header:nth-of-type(1) {
+    display: inline;
+  }
+  .mobile-nav {
+    color: black;
+  }
+  .mobile-nav .bars {
+    display: flex;
+  }
+  .desktop-nav {
+    display: none;
+    height: auto;
+    border-top: 4px solid #267324;
+  }
+  .desktop-nav ul {
+    flex-direction: column;
+  }
+  .desktop-nav li {
+    display: flex;
+  }
+}/*# sourceMappingURL=pels.css.map */

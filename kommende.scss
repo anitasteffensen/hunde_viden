@@ -10,9 +10,27 @@ video {
 
 
 #faktorer {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        height: 5rem;
+        width: 5rem;
+
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+#inspiration-grid {
+    a {
+        color: black;
+    }
 }
 
 
@@ -21,16 +39,28 @@ video {
 
 
 
-@media screen and (min-width: 800px) {
 
-    video {
-        width: 100%;
-        height: 100%;
-    }
+
+@media screen and (min-width: 650px) {
 
     #faktorer {
+
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 3rem;
+
+        .tekst p {
+            text-align: justify;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    #faktorer {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
