@@ -16,9 +16,14 @@ main {
 #index-navigation {
 
   .page-navigation {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 25px;
 
     img {
       width: 100%;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
     }
 
     h2 {
@@ -28,6 +33,14 @@ main {
     p {
       margin: 1rem 1rem;
     }
+
+    .tekst {
+      height: 10rem;
+    }
+  }
+
+  .page-navigation:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -37,14 +50,13 @@ main {
 .hvalp,
 .race {
   margin: 2rem auto;
-  border: solid 1px black;
-
-
+  background-color: #E2D2C4;
 }
 
 
 
 @media screen and (min-width: 600px) {
+
 
   #index-navigation {
 
@@ -54,6 +66,10 @@ main {
       img {
         height: 10rem;
         width: 13rem;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 0;
+
       }
 
       h2 {
@@ -72,22 +88,25 @@ main {
   .hvalp,
   .race {
     margin: 2rem auto;
-    border: solid 1px black;
 
 
   }
 }
 
-@media screen and (min-width: 900px) {
+
+
+@media screen and (min-width: 950px) {
+
   #index-navigation {
     display: grid;
     grid-template-columns: 50% 50%;
-
+    gap: 2rem;
+    /*ended up adding margin because pictures didn't align with the sections*/
+    margin: 0 1rem;
 
     .page-navigation {
       img {
-        height: 15rem;
-        width: 10rem;
+        height: 14rem;
       }
 
     }
@@ -99,7 +118,6 @@ main {
     .race {
       margin: 0 auto;
     }
-
 
   }
 }

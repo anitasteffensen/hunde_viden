@@ -164,14 +164,27 @@ main a {
   color: black;
 }
 
+#index-navigation .page-navigation {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+}
 #index-navigation .page-navigation img {
   width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 #index-navigation .page-navigation h2 {
   margin: 0.5rem 1rem;
 }
 #index-navigation .page-navigation p {
   margin: 1rem 1rem;
+}
+#index-navigation .page-navigation .tekst {
+  height: 10rem;
+}
+#index-navigation .page-navigation:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .pels,
@@ -180,7 +193,7 @@ main a {
 .hvalp,
 .race {
   margin: 2rem auto;
-  border: solid 1px black;
+  background-color: #E2D2C4;
 }
 
 @media screen and (min-width: 600px) {
@@ -190,6 +203,9 @@ main a {
   #index-navigation .page-navigation img {
     height: 10rem;
     width: 13rem;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0;
   }
   #index-navigation .page-navigation h2 {
     margin: 0.5rem 1rem;
@@ -203,17 +219,18 @@ main a {
   .hvalp,
   .race {
     margin: 2rem auto;
-    border: solid 1px black;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
   #index-navigation {
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 2rem;
+    /*ended up adding margin because pictures didn't align with the sections*/
+    margin: 0 1rem;
   }
   #index-navigation .page-navigation img {
-    height: 15rem;
-    width: 10rem;
+    height: 14rem;
   }
   #index-navigation .pels,
   #index-navigation .adfaerd,
